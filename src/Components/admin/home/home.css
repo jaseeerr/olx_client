@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    background-color: #151418;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo a span {
+    color: #8739fa;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+  }
+  
+  .menu:hover a {
+    opacity: 0.4;
+  }
+  
+  .menu a:hover {
+    opacity: 1;
+    color: #fff;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    transform: scale(1, 1);
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .menu {
+      flex-direction: column;
+      background-color: #151418;
+      align-items: start;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+  
+    .menu a {
+      margin-left: 12px;
+    }
+  
+    .menu li {
+      margin-bottom: 10px;
+    }
+  
+    .menu-icon {
+      display: block;
+      color: #fff;
+      font-size: 28px;
+      cursor: pointer;
+    }
+  }
+  
+
+
+
+  .moreView {
+    margin: 16px 16px 24px;
+    padding: 16px 16px 32px;
+    background-color: #ebeeef;
+    border-radius: 4px;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .heading :first-child {
+    font-size: 24px;
+    color: #002f34;
+  }
+  
+  .heading :last-child {
+    font-size: 14px;
+    color: #002f34;
+  }
+  
+  .recommendations .cards {
+    display: flex;
+  }
+  
+  .moreView .cards {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .card {
+    margin-right: 15px;
+    padding: 13px;
+    max-width: 222px;
+    width: 222px;
+    height: 270px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .card .favorite {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .card .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card .image img {
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    text-align: center;
+  }
+  .card .content .rate {
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .card .content .kilometer {
+    font-size: medium;
+  }
+  .card .content .name {
+    font-size: small;
+  }
+  .card .date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+  }
+  
+  .recommendations {
+    margin: 16px 16px 24px;
+  }
+  
+  .recommendations .heading span {
+    font-size: 24px;
+    color: #002f34;
+  }
+  
+  button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+   }
